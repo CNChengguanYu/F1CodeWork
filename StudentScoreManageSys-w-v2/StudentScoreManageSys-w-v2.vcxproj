@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCF0918B-20C8-449C-8B88-F5F399A42E41}</ProjectGuid>
+    <Keyword>QtVS_v302</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;sql;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;sql;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GroupERRWindow.cpp" />
+    <ClCompile Include="IsContinue.cpp" />
+    <ClCompile Include="IsScoreInWindow.cpp" />
+    <ClCompile Include="LoginMenu.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RegAccMenu.cpp" />
+    <ClCompile Include="ScoreDeleteWindow.cpp" />
+    <ClCompile Include="ScoreInWindow.cpp" />
+    <ClCompile Include="ScoreListMenu.cpp" />
+    <ClCompile Include="ScoreSearchWindow.cpp" />
+    <ClCompile Include="StudentListMenu.cpp" />
+    <ClCompile Include="StudentScoreManageSys.cpp" />
+    <ClCompile Include="SysMainMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="StudentScoreManageSys.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="GroupERRWindow.ui" />
+    <QtUic Include="IsContinue.ui" />
+    <QtUic Include="IsScoreInWindow.ui" />
+    <QtUic Include="LoginMenu.ui" />
+    <QtUic Include="RegAccMenu.ui" />
+    <QtUic Include="ScoreDeleteWindow.ui" />
+    <QtUic Include="ScoreInWindow.ui" />
+    <QtUic Include="ScoreListMenu.ui" />
+    <QtUic Include="ScoreSearchWindow.ui" />
+    <QtUic Include="StudentListMenu.ui" />
+    <QtUic Include="StudentScoreManageSys.ui" />
+    <QtUic Include="SysMainMenu.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="StudentScoreManageSys.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="LoginMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SysMainMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="RegAccMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="StudentListMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ScoreListMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ScoreInWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="IsScoreInWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="IsContinue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ScoreDeleteWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="GroupERRWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ScoreSearchWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui_SysMainMenu.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

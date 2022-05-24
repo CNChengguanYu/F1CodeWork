@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/StudentScoreManageSys">
+        <file>img/logintest.png</file>
+        <file>img/closeButton.png</file>
+        <file>img/white.png</file>
+        <file>img/DeleteScoreMenu.png</file>
+        <file>img/ResetMenu.png</file>
+        <file>img/ScoreInMenu.png</file>
+        <file>img/ShowScoreMenu.png</file>
+        <file>img/BackButton.png</file>
+    </qresource>
+</RCC>
