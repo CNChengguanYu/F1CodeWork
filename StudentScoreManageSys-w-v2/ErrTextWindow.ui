@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ScoreDeleteWindow</class>
- <widget class="QWidget" name="ScoreDeleteWindow">
+ <class>ErrTextWindow</class>
+ <widget class="QWidget" name="ErrTextWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>280</width>
-    <height>130</height>
+    <width>200</width>
+    <height>60</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>280</width>
-    <height>130</height>
+    <width>200</width>
+    <height>60</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>280</width>
-    <height>130</height>
+    <width>200</width>
+    <height>60</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string notr="true">检查</string>
+   <string>ERR!</string>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>280</width>
-     <height>130</height>
+     <width>200</width>
+     <height>60</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -40,40 +40,36 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QTextBrowser" name="Info">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>10</x>
+      <y>30</y>
+      <width>181</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>啊对对对</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
       <y>10</y>
-      <width>200</width>
-      <height>80</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="YesBtn">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>95</y>
-      <width>92</width>
-      <height>28</height>
+      <width>181</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>确认</string>
+     <string/>
     </property>
-   </widget>
-   <widget class="QPushButton" name="NoBtn">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>95</y>
-      <width>92</width>
-      <height>28</height>
-     </rect>
+    <property name="scaledContents">
+     <bool>false</bool>
     </property>
-    <property name="text">
-     <string>取消</string>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>

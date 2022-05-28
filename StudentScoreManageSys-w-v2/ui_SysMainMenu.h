@@ -1,18 +1,18 @@
-#pragma once
 /********************************************************************************
-** Form generated from reading UI file 'SysMainMenuHSEzbt.ui'
+** Form generated from reading UI file 'SysMainMenuCpKbje.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.14.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef SYSMAINMENUHSEZBT_H
-#define SYSMAINMENUHSEZBT_H
+#ifndef SYSMAINMENUCPKBJE_H
+#define SYSMAINMENUCPKBJE_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFrame>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
@@ -27,6 +27,7 @@ public:
     QPushButton* ResetScoreBtn;
     QPushButton* ShowScoreBtn;
     QPushButton* DeleteScoreBtn;
+    QLabel* label;
 
     void setupUi(QWidget* SysMainMenu)
     {
@@ -71,6 +72,12 @@ public:
         DeleteScoreBtn->setMinimumSize(QSize(240, 160));
         DeleteScoreBtn->setMaximumSize(QSize(240, 160));
         DeleteScoreBtn->setStyleSheet(QString::fromUtf8("border-image: url(:/StudentScoreManageSys/img/DeleteScoreMenu.png);"));
+        label = new QLabel(frame);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(10, 10, 200, 20));
+        QFont font;
+        font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        label->setFont(font);
 
         retranslateUi(SysMainMenu);
         QObject::connect(closeBtn, SIGNAL(clicked()), SysMainMenu, SLOT(close()));
@@ -86,6 +93,7 @@ public:
         ResetScoreBtn->setText(QString());
         ShowScoreBtn->setText(QString());
         DeleteScoreBtn->setText(QString());
+        label->setText(QString());
     } // retranslateUi
 
 };
@@ -96,4 +104,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // SYSMAINMENUHSEZBT_H
+#endif // SYSMAINMENUCPKBJE_H

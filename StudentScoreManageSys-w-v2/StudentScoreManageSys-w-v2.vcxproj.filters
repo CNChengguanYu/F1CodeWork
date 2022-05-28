@@ -38,6 +38,9 @@
     <ClCompile Include="ScoreSearchWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ErrTextWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Resource Files">
@@ -59,6 +62,9 @@
       <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
       <Extensions>ui</Extensions>
       <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Header Files\UIClass">
+      <UniqueIdentifier>{7faf889f-71d5-4d74-8236-5ee9d8be51ef}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -98,42 +104,18 @@
     <QtMoc Include="ScoreSearchWindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="ErrTextWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="StudentScoreManageSys.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="LoginMenu.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="SysMainMenu.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="RegAccMenu.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="StudentListMenu.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="ScoreListMenu.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="ScoreInWindow.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="IsScoreInWindow.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="IsContinue.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="ScoreDeleteWindow.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
     <QtUic Include="GroupERRWindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="ScoreSearchWindow.ui">
+    <QtUic Include="ErrTextWindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -143,8 +125,38 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ui_IsContinue.h">
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_IsScoreInWindow.h">
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_LoginMenu.h">
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_RegAccMenu.h">
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_ScoreDeleteWindow.h">
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_ScoreInWindow.h">
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_ScoreListMenu.h">
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_ScoreSearchWindow.h">
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_StudentListMenu.h">
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
     <ClInclude Include="ui_SysMainMenu.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\UIClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_ErrTextWindow.h">
+      <Filter>Header Files\UIClass</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

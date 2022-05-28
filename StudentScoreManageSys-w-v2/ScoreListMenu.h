@@ -2,6 +2,9 @@
 
 #include <QWidget>
 #include "ui_ScoreListMenu.h"
+#include <QTableWidgetItem>   //¿ØÖÆ±í¸ñ
+#include <QTableWidget>
+
 
 class ScoreListMenu : public QWidget
 {

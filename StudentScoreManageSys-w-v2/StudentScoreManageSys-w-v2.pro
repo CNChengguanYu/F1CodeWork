@@ -50,3 +50,4 @@ FORMS += ./GroupERRWindow.ui \
     ./StudentScoreManageSys.ui \
     ./SysMainMenu.ui
 RESOURCES += StudentScoreManageSys.qrc
+RC_ICONS += StudentScoreManageSys/img/Logo.ico

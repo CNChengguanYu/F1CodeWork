@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>是否继续</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/Logo.ico</normaloff>img/Logo.ico</iconset>
+  </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>

@@ -61,7 +61,7 @@
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
@@ -80,6 +80,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ErrTextWindow.cpp" />
     <ClCompile Include="GroupERRWindow.cpp" />
     <ClCompile Include="IsContinue.cpp" />
     <ClCompile Include="IsScoreInWindow.cpp" />
@@ -98,18 +99,9 @@
     <QtMoc Include="StudentScoreManageSys.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="ErrTextWindow.ui" />
     <QtUic Include="GroupERRWindow.ui" />
-    <QtUic Include="IsContinue.ui" />
-    <QtUic Include="IsScoreInWindow.ui" />
-    <QtUic Include="LoginMenu.ui" />
-    <QtUic Include="RegAccMenu.ui" />
-    <QtUic Include="ScoreDeleteWindow.ui" />
-    <QtUic Include="ScoreInWindow.ui" />
-    <QtUic Include="ScoreListMenu.ui" />
-    <QtUic Include="ScoreSearchWindow.ui" />
-    <QtUic Include="StudentListMenu.ui" />
     <QtUic Include="StudentScoreManageSys.ui" />
-    <QtUic Include="SysMainMenu.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="StudentScoreManageSys.qrc" />
@@ -148,6 +140,17 @@
     <QtMoc Include="ScoreSearchWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="ErrTextWindow.h" />
+    <ClInclude Include="ui_ErrTextWindow.h" />
+    <ClInclude Include="ui_IsContinue.h" />
+    <ClInclude Include="ui_IsScoreInWindow.h" />
+    <ClInclude Include="ui_LoginMenu.h" />
+    <ClInclude Include="ui_RegAccMenu.h" />
+    <ClInclude Include="ui_ScoreDeleteWindow.h" />
+    <ClInclude Include="ui_ScoreInWindow.h" />
+    <ClInclude Include="ui_ScoreListMenu.h" />
+    <ClInclude Include="ui_ScoreSearchWindow.h" />
+    <ClInclude Include="ui_StudentListMenu.h" />
     <ClInclude Include="ui_SysMainMenu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

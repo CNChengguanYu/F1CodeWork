@@ -8,5 +8,8 @@
         <file>img/ScoreInMenu.png</file>
         <file>img/ShowScoreMenu.png</file>
         <file>img/BackButton.png</file>
+        <file>img/Logo.ico</file>
+        <file>img/ResetBtn.png</file>
+        <file>img/AddBtn.png</file>
     </qresource>
 </RCC>

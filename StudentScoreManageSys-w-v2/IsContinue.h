@@ -2,7 +2,7 @@
 
 #include <QWidget>
 #include "ui_IsContinue.h"
-
+#include <QtGui/QIcon>
 class IsContinue : public QWidget
 {
 	Q_OBJECT
